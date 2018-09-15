@@ -1,0 +1,11 @@
+@import 'colors.scss';
+
+.chat-header {
+  height: 48px;
+  line-height: 48px;
+  background-color: $primary;
+  padding: 0 16px;
+
+  color: #fff;
+  font-size: 24px;
+}

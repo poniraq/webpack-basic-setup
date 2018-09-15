@@ -1,0 +1,13 @@
+@import 'colors.scss';
+
+.app-header {
+  background: $primary;
+  color: $primary-text;
+  padding: 8px 16px;
+
+  .app-title {
+    display: inline-block;
+    font-size: 32px;
+    font-weight: 600;
+  }
+}

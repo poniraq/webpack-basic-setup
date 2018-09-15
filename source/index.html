@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test chat</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://j11y.io/demos/plugins/jQuery/autoresize.jquery.js"></script>
+
+    <link rel="stylesheet" href="styles/bundle.css">
+</head>
+<body>
+    <header class="app-header">
+        <span class="app-title">
+            Test chat
+        </span>
+    </header>
+
+    <div class="app-body">
+        <div class="chat">
+            <div class="chat-header">Andrew</div>
+            <div class="chat-body"></div>
+            <div class="chat-footer">
+                <div class="chat-footer-upper">
+                    <div class="message-options"></div>
+                    <button class="message-send" id="message-send">SEND</button>
+                </div>
+                <div class="chat-footer-body">
+
+                    <textarea class="message-input" name="message" id="message-input" rows="2"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
