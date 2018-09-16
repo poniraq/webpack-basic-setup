@@ -1,0 +1,79 @@
+@import 'colors.scss';
+
+.chat-body {
+  flex: 1;
+  padding: 0 8px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: $chat-body;
+
+  .chat-message {
+    display: flex;
+    align-content: center;
+    margin-top: 8px;
+
+    .sender-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+      overflow: hidden;
+      background-image: url('~assets/images/50x50.png');
+    }
+
+    .content {
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+      align-items: center;
+      padding: 0 8px;
+
+      .content-wrapper {
+        display: flex;
+        flex-direction: column;
+  
+        .content-bubble {
+          display: inline-block;
+          padding: 8px;
+          border-radius: 12px;
+        }
+      }
+    }
+  }
+
+  .chat-message.in {
+    margin-right: 25%;
+    flex-direction: row;
+
+    .content {
+      flex-direction: row;
+
+      .content-bubble {
+        background-color: $chat-bubble-in;
+        color: $chat-bubble-in-text;
+      }
+    }
+  }
+
+  .chat-message.out {
+    margin-left: 25%;
+    flex-direction: row-reverse;
+
+    .content {
+      flex-direction: row-reverse;
+
+      .content-bubble {
+        background-color: $chat-bubble-out;
+        color: $chat-bubble-out-text;
+        background-color: #cfdaff;
+        color: #003190;
+      }
+    }
+  }
+
+  .chat-message:first-child {
+    margin-top: 16px;
+  }
+  .chat-message:last-child {
+    margin-bottom: 16px;
+  }
+}

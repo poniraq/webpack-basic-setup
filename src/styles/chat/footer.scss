@@ -26,6 +26,13 @@
       letter-spacing: 1px;
 
       cursor: pointer;
+
+      &:hover {
+        background-color: lighten($color: $secondary, $amount: 5);
+      }
+      &.pressed {
+        background-color: lighten($color: $secondary, $amount: 10);
+      }
     }
   }
 
@@ -41,6 +48,7 @@
 
       padding: 8px;
       font-size: 16px;
+      border: none;
     }
   }
 }
